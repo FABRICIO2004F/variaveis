@@ -1,0 +1,70 @@
+#include <stdio.h>
+//exercicio1//
+
+main(){
+
+int numero1, numero2, soma, sub, multi;
+float div;
+
+printf("digite o primeiro numero");
+    scanf("%d", &numero1);
+printf("digite o segundo numero");
+    scanf("%d", &numero2);
+
+soma = numero1 + numero2;
+sub = numero1 - numero2;
+multi = numero1 * numero2;
+div = numero1 / numero2;
+
+printf("soma:%d, \nMultiplicacao:%d, \nSubtracao:%d, \nDivisao:%.2f", soma,multi,sub,div);
+}
+
+#include <stdio.h>
+//exercicio2//
+
+main(){
+  int numero1, dobrar;
+ 
+  printf("digite um numero qualquer");
+  scanf("%d", &numero1);
+
+  dobrar = numero1 * 2;
+
+  printf("seu numero dobrado é: %d", dobrar);
+}
+
+#include<stdio.h>
+//exercicio3//
+main(){
+  int area, largura, comprimento;
+
+  printf("digite a largura");
+  scanf("%d", &largura);
+
+  printf("digite o comprimento");
+  scanf("%d", &comprimento);
+
+  area = largura * comprimento;
+
+  printf("sua area é: %d", area);
+}
+
+#include <stdio.h>
+//exercicio4//
+int main() {
+    float real;
+    double convertido;
+    double cotacao = 4.98;
+
+    printf("Digite o valor em reais e sera convertido para dollar: ");
+    scanf("%f", &real);
+
+    convertido = real * cotacao;
+
+    printf("Seu valor convertido para dólares será: %.3lf", convertido);
+
+    return 0;
+}
+
+
+
