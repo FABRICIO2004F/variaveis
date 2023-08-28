@@ -65,6 +65,36 @@ int main() {
 
     return 0;
 }
+#include <stdio.h>
+//exercicio5//
+
+int main() {
+    float custo_mercadoria, valor_frete, despesas_eventuais, valor_venda;
+
+    printf("Digite o custo da mercadoria: ");
+    scanf("%f", &custo_mercadoria);
+
+    printf("Digite o valor do frete: ");
+    scanf("%f", &valor_frete);
+
+    printf("Digite o valor das despesas eventuais: ");
+    scanf("%f", &despesas_eventuais);
+
+    printf("Digite o valor de venda: ");
+    scanf("%f", &valor_venda);
+
+    float custo_total = custo_mercadoria + valor_frete + despesas_eventuais;
+    float lucro = valor_venda - custo_total;
+    float percentual_lucro = (lucro / custo_total) * 100;
+
+    printf("\nResumo:\n");
+    printf("Custo total: R$%.2f\n", custo_total);
+    printf("Lucro: R$%.2f\n", lucro);
+    printf("Percentual de lucro: %.2f%%\n", percentual_lucro);
+
+    return 0;
+}
+
 
 
 
