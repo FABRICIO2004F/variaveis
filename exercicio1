@@ -112,7 +112,89 @@ int main() {
 
     return 0;
 }
+main(){
+	setlocale(LC_ALL, "portuguese");
+	float raio, area;
+	
+	printf("Qual o valor do raio do circulo");
+	scanf("%f", &raio);
+	
+	area = raio * raio * 3.14 ;
+	
+	printf("Valor da área:%.2f", area);
+	
+}
 
+//atividade 8//
+
+main(){
+	setlocale(LC_ALL, "portuguese");
+	int idade, dias;
+	
+	printf("Quantos anos você tem?");
+	scanf("%d", &idade);
+	
+	dias = idade * 365;
+	
+	printf("Atualmente você tem %d de dias de vida", dias);
+}
+
+//atividade 9//
+
+main(){
+	setlocale(LC_ALL, "portuguese");
+	float salario, reajuste, reajustado, porcentegem;
+	
+	printf("O valor do seu salário:");
+	scanf("%f", &salario);
+	
+	printf("O valor do reajuste em porcentagem");
+	scanf("%f", &porcentegem);
+	
+	reajuste = porcentegem / 100 * salario;
+	reajustado = reajuste + salario;
+	
+	printf("O valor do salario reajustado será:%.2f", reajustado);
+}
+
+//atividade 10//
+main(){
+	setlocale(LC_ALL, "portuguese");
+	float custofab, custoend;
+	int distribuidor = 28;
+	int imposto = 45;
+	
+	printf("Digite o custo de fábrica do carro:");
+	scanf("%f", &custofab);
+	
+	custoend = (custofab * distribuidor / 100) + (custofab * imposto/100) + custofab;
+	
+	printf("O valor do carro novo é: %.2f", custoend);
+}
+//atividade 11//
+main(){
+    
+    setlocale(LC_ALL, "portuguese");
+    /* atividade 11 */
+    int carro;
+    float salario, vendas, total;
+    int comissao = 200;
+
+    
+    printf("Qual é o salário do seu funcionário?\n");
+    scanf("%f", &salario);
+
+    printf("Quantos carros ele vendeu?\n");
+    scanf("%d", &carro);
+
+    printf("Qual foi o valor total das vendas?\n");
+    scanf("%f", &vendas);
+
+    total= salario + (comissao*carro) + (vendas * 5/100);
+
+    printf("O salário final do seu funcionário será:\n %.2f", total);
+    return 0;
+}
 
 
 
